@@ -3,7 +3,9 @@ body, html {
   padding: 0;
   height: 100%;
   font-family: Arial, sans-serif;
+  background: url(cat-coding-focused-feline-working-laptop-bokeh-lights-grey-shown-possibly-programming-background-features-soft-367972958.webp);
 }
+
 .parallax {
   height: 100vh;
   background-attachment: fixed; 
@@ -15,9 +17,6 @@ body, html {
   align-items: center;
 }
 
-.img1 {
-  background-image: url(cat-coding-focused-feline-working-laptop-bokeh-lights-grey-shown-possibly-programming-background-features-soft-367972958.webp);
-}
 
 .img2 {
   background-image: url(4KwhdIsp_400x400.jpg);
@@ -34,7 +33,7 @@ body, html {
   color: white;
 
   display: flex;
-  justify-content: center;
+  justify-content: top;
   align-items: center;
   font-size: 2em;
 }

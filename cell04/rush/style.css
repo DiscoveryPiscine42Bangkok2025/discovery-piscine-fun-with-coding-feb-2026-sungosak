@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* ===== Landing Page ===== */
+.landing {
+    min-height: 100vh;
+    background-image: url("https://ap-southeast-2-seek-apac.graphassets.com/AEzBCRO50TYyqbV6XzRDQz/LsIcD8IpSsS6QA76vmsv");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 80px;
+}
+
+.landing::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+}
+
+.landing-content {
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    max-width: 900px;
+    width: 90%;
+}
+
+.card-container {
+    padding-top: 160px;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.cv-card {
+    
+    background: white;
+    color: black;
+    padding: 30px;
+    border-radius: 15px;
+    width: 400px;
+    height: 600px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    transition: 0.3s;
+    padding-top: 50px;
+}
+
+.cv-card:hover {
+    transform: scale(1.05);
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 60px;
+    background: #000000;
+    color: white;
+    text-decoration: none;
+    
+}
+
+h1 {
+    height: 100%;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 20px 40px;
+    font-size: 3rem;
+    letter-spacing: 10px;
+    border: 2px solid white;
+    justify-content: center;
+}
+
+h3 {
+    font-size: x-large;
+    padding-top: 20px;
+}
+
+p {
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: purp;
+}
