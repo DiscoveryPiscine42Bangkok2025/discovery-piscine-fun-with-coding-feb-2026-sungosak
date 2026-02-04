@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Explode this balloon</title>
+  <title>Explode this balloon (jQuery)</title>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
   <style>
     body {
@@ -28,13 +30,11 @@
   <div id="balloon"></div>
 
   <script>
-    const balloon = document.getElementById("balloon");
-
     let size = 200;
-    let colors = ["red", "green", "blue"];
+    const colors = ["red", "green", "blue"];
     let colorIndex = 0;
 
-    balloon.addEventListener("click", function () {
+    $("#balloon").click(function () {
       size += 10;
 
       if (size > 420) {
@@ -47,7 +47,7 @@
       updateBalloon();
     });
 
-    balloon.addEventListener("mouseleave", function () {
+    $("#balloon").mouseleave(function () {
       if (size > 200) {
         size -= 5;
         colorIndex = (colorIndex - 1 + colors.length) % colors.length;
@@ -56,9 +56,11 @@
     });
 
     function updateBalloon() {
-      balloon.style.width = size + "px";
-      balloon.style.height = size + "px";
-      balloon.style.backgroundColor = colors[colorIndex];
+      $("#balloon").css({
+        width: size + "px",
+        height: size + "px",
+        "background-color": colors[colorIndex]
+      });
     }
   </script>
 

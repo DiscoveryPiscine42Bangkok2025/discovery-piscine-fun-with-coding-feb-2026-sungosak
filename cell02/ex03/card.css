@@ -1,0 +1,60 @@
+body {
+  background-color: #f2f2f2;
+  font-family: Arial, sans-serif;
+}
+
+.card {
+  width: 300px;
+  background-color: white;
+  margin: 50px auto;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.card h1 {
+  margin: 20px 0;
+}
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td {
+  border: none;
+  padding: 10px;
+}
+
+.profile {
+  width: 100%;
+}
+
+.login {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.desc {
+  color: gray;
+}
+
+.school {
+  margin-top: 5px;
+}
+
+.social img {
+  width: 20px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+button {
+  width: 100%;
+  padding: 15px;
+  background-color: black;
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
